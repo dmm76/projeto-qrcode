@@ -1,21 +1,6 @@
-async function permitterCharacteres() {
-  let permitted = [];
+import permitterCharacteres from "./utils/permitted-characteres.js";
 
-  if (process.env.UPPERCASE_LETTERS === "true") {
-    permitted.push(..."ABCDEFGHIJKLMNOPQRSTUVXYZ");
-  }
-  if (process.env.LOWERCASE_LETTERS === "true") {
-    permitted.push(..."abcdefghijklmnopqrstuvxyz");
-  }
-  if (process.env.NUMBERS === "true") {
-    permitted.push(..."0123456789");
-  }
-  if (process.env.SPECIAL_CHARACTERES === "true") {
-    permitted.push(..."!@#$%¨*()_+=-");
-  }
-  return permitted;
-}
-
+//extracted method - refatoração
 async function handle() {
   let characters = [];
   let password = "";

@@ -1,6 +1,6 @@
 import qr from "qrcode-terminal";
 import chalk from "chalk";
-import promptQRCode from "../../prompts/prompt-qrcode.js";
+import promptSchemaQRCode from "../../prompts-schema/prompt-squema-qrcode.js";
 
 async function handle(err, result) {
   if (err) {
