@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "node:start": "node ./src/index.js",
+    "node:start": "node --env-file=.env ./src/index.js",
     "node:watch": "node --watch ./src/index.js"
   },
   "keywords": [],
@@ -13,6 +13,8 @@
   "license": "ISC",
   "description": "kit de utilidades para e-commerces",
   "dependencies": {
-    "prompt": "^1.3.0"
+    "chalk": "^5.4.1",
+    "prompt": "^1.3.0",
+    "qrcode-terminal": "^0.12.0"
   }
 }
